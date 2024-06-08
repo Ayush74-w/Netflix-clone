@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("Assets/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    height: 70vh;
+    background-repeat: no-repeat;
+    /* width:max-width(1200px 100vw); */
+
+
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    max-width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+    color: red;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    border-radius: 4px;
+    padding: 8px;
+    border: none;
+
+}
+
+.sign {
+    background-color: red;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    /* margin:24px; */
+    height: calc(100% - 130px);
+    position: relative;
+    /* font-weight:900; */
+    gap: 14px;
+    padding: 30px;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation {
+    height: 5px;
+    background-color: rgb(44, 42, 42);
+}
+
+.btn {
+    padding: 3px 12px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 2px solid rgba(232, 220, 220, 0.5);
+    color: white;
+}
+
+.sign {
+    background-color: red;
+    color: white;
+}
+
+.btn-red {
+    background-color: red;
+    padding: 8px 12px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 23px;
+    font-family: sans-serif;
+    border: none;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.main input {
+    padding: 7px 12px 7px 3px;
+    font-size: 23px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 3px solid rgba(232, 220, 220, 0.5);
+    font-weight: 900;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 59vw;
+    color: white;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    width: 25vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg video {
+    position: absolute;
+    right: 51px;
+    top: 67px;
+    width: 318px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    left: 24px;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+.second {
+    gap: 41px;
+    align-items: center;
+    max-width: 71vw;
+}
