@@ -12,7 +12,7 @@ body {
     background-image: url("Assets/images/bg.jpg");
     background-position: center center;
     background-size: max(1200px, 100vw);
-    height: 70vh;
+    height: 97vh;
     background-repeat: no-repeat;
     /* width:max-width(1200px 100vw); */
 
@@ -21,7 +21,7 @@ body {
 }
 
 .main .box {
-    height: 70vh;
+    height: 97vh;
     width: 100%;
     opacity: 0.44;
     background-color: black;
@@ -32,10 +32,10 @@ body {
 nav {
     display: flex;
     margin: auto;
-    max-width: 80vw;
-    justify-content: space-around;
+    max-width: 77%;
+    justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 100px;
 
 }
 
@@ -43,6 +43,7 @@ nav img {
     position: relative;
     z-index: 10;
     color: red;
+    width:130px;
 }
 
 nav button {
@@ -67,11 +68,11 @@ nav button {
     color: white;
     flex-direction: column;
     /* margin:24px; */
-    height: calc(100% - 130px);
+    height: calc(100% - 100px);
     position: relative;
     /* font-weight:900; */
     gap: 14px;
-    padding: 30px;
+    /* padding: 30px; */
 }
 
 .hero> :first-child {
@@ -94,6 +95,8 @@ nav button {
 
 .seperation {
     height: 5px;
+    position:relative;
+    z-index:20;
     background-color: rgb(44, 42, 42);
 }
 
@@ -140,14 +143,20 @@ nav button {
     margin: auto;
     max-width: 59vw;
     color: white;
+    height:35vw;
 }
-
+@media screen and (max-width:1300px){
+.first{
+    flex-wrap:wrap;
+    background-color:blue;
+}
+}
 .secimg {
     position: relative;
 }
 
 .secimg img {
-    width: 25vw;
+    width: 425px;
     position: relative;
     z-index: 10;
 }
@@ -163,7 +172,7 @@ section.first>div {
     display: flex;
     flex-direction: column;
     gap: 2px;
-    left: 24px;
+    left: 4px;
 }
 
 section.first>div :nth-child(1) {
@@ -180,13 +189,61 @@ section.first>div :nth-child(2) {
     align-items: center;
     max-width: 71vw;
 }
-h2{
+.fqn{
+    padding:34px;
+}
+.fqn h2{
     color:white;
-    justify-content:center;
-    align-items:center;
+  text-align:center;
+  font-weight:900;
+  font-size:48px;
+}
+.faqbox span{
+    font-size:18px;
+    font-weight :400;
+    color:white;
 }
 .faqbox{
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 27px;
+    max-width: 67vw;
+    margin: 9px auto;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.faqbox svg{
+    color:white;
+}
+.fqn p{
+    color:white;
+    text-align:center;
+    padding-top:20px;
+    font-size:20px;
+    font-weight:400;
+}
+footer{
+    color:white;
+    max-width:60vw;
+    margin:auto;
+    font-size:14px;
+    font-weight:400;
+    padding:14px;
+    /* width:400px; */
+}
+.questions{
+    padding:11px;
+}
+.footer{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+   
+.footer-items{
     display:flex;
-    background-color:gray;
-    padding:34px;
+    flex-direction:column;
+   gap:12px;
+}
+.footer-items a{
+    color:white;
 }
