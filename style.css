@@ -180,3 +180,13 @@ section.first>div :nth-child(2) {
     align-items: center;
     max-width: 71vw;
 }
+h2{
+    color:white;
+    justify-content:center;
+    align-items:center;
+}
+.faqbox{
+    display:flex;
+    background-color:gray;
+    padding:34px;
+}
